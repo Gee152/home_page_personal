@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { MessageCircle, Dumbbell, ChevronDown } from 'lucide-react';
+import { telaPulsanteAntesCroll, introWebBackground, introWebBackground2 } from '../assets/images';
 
 const defaultIntroSlides = [
   {
     id: 1,
-    image: "/images/telaPulsanteAntesCroll.jpg", // Imagem vertical da modelo centralizada para mobile
-    desktopImage: "/images/introWebBackground.jpg",
+    image: telaPulsanteAntesCroll, // Imagem vertical da modelo centralizada para mobile
+    desktopImage: introWebBackground,
     tagTitle: "SAÚDE",
     tagSubtitle: "TREINO",
     tagSubtitleBg: "bg-[#FF5A00]",
@@ -25,8 +26,8 @@ const defaultIntroSlides = [
   },
   {
     id: 2,
-    image: "/images/telaPulsanteAntesCroll.jpg",
-    desktopImage: "/images/introWebBackground2.jpg",
+    image: telaPulsanteAntesCroll,
+    desktopImage: introWebBackground2,
     tagTitle: "FEMME",
     tagSubtitle: "FITNESS",
     tagSubtitleBg: "bg-[#FF7A00] text-white",
@@ -95,7 +96,7 @@ export default function PulsingIntroScreen({
                 className="w-full h-full object-cover object-top sm:object-center filter brightness-90 contrast-105"
                 onError={(e) => {
                   e.currentTarget.onerror = null;
-                  e.currentTarget.src = "/images/telaPulsanteAntesCroll.jpg";
+                  e.currentTarget.src = telaPulsanteAntesCroll;
                 }}
               />
             </picture>

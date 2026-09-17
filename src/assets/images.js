@@ -1,0 +1,79 @@
+import antes from './antes.png';
+import depois from './depois.png';
+import coachVideoThumb from './coach_video_thumb.jpg';
+import heroCardClasses from './hero_card_classes.jpg';
+import heroCardJoinus from './hero_card_joinus.jpg';
+import heroCardTimetable from './hero_card_timetable.jpg';
+import introWebBackground from './introWebBackground.jpg';
+import introWebBackground2 from './introWebBackground2.jpg';
+import leticeHero from './letice_hero.png';
+import painPointCompulsion from './pain_point_compulsion.jpg';
+import painPointCore from './pain_point_core.jpg';
+import painPointHormonal from './pain_point_hormonal.jpg';
+import painPointMenopause from './pain_point_menopause.jpg';
+import prod2 from './prod2.jpg';
+import produto1 from './produto1.png';
+import silhueta from './silhueta.webp';
+import telaPulsanteAntesCroll from './telaPulsanteAntesCroll.jpg';
+
+export {
+  antes,
+  depois,
+  coachVideoThumb,
+  heroCardClasses,
+  heroCardJoinus,
+  heroCardTimetable,
+  introWebBackground,
+  introWebBackground2,
+  leticeHero,
+  painPointCompulsion,
+  painPointCore,
+  painPointHormonal,
+  painPointMenopause,
+  prod2,
+  produto1,
+  silhueta,
+  telaPulsanteAntesCroll,
+};
+
+export const images = {
+  antes,
+  depois,
+  coachVideoThumb,
+  heroCardClasses,
+  heroCardJoinus,
+  heroCardTimetable,
+  introWebBackground,
+  introWebBackground2,
+  leticeHero,
+  painPointCompulsion,
+  painPointCore,
+  painPointHormonal,
+  painPointMenopause,
+  prod2,
+  produto1,
+  silhueta,
+  telaPulsanteAntesCroll,
+};
+
+export const imageMap = {
+  '/images/antes.png': antes,
+  '/images/depois.png': depois,
+  '/images/coach_video_thumb.jpg': coachVideoThumb,
+  '/images/hero_card_classes.jpg': heroCardClasses,
+  '/images/hero_card_joinus.jpg': heroCardJoinus,
+  '/images/hero_card_timetable.jpg': heroCardTimetable,
+  '/images/introWebBackground.jpg': introWebBackground,
+  '/images/introWebBackground2.jpg': introWebBackground2,
+  '/images/letice_hero.png': leticeHero,
+  '/images/pain_point_compulsion.jpg': painPointCompulsion,
+  '/images/pain_point_core.jpg': painPointCore,
+  '/images/pain_point_hormonal.jpg': painPointHormonal,
+  '/images/pain_point_menopause.jpg': painPointMenopause,
+  '/images/prod2.jpg': prod2,
+  '/images/produto1.png': produto1,
+  '/images/silhueta.webp': silhueta,
+  '/images/telaPulsanteAntesCroll.jpg': telaPulsanteAntesCroll,
+};
+
+export default images;

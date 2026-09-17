@@ -1,3 +1,5 @@
+import { antes, depois } from '../assets/images';
+
 export const defaultSocialProofCases = [
   {
     name: "Mariana Albuquerque",
@@ -11,8 +13,8 @@ export const defaultSocialProofCases = [
       { label: "Gordura Visceral", val: "Nível 7 para 3" }
     ],
     quote: "Depois da minha segunda gestação, achei que nunca mais teria minha barriga de volta sem cirurgia. O treino de core profundo associado ao cardápio sem restrição para amamentação foi a melhor decisão da minha vida.",
-    beforeImg: "/images/antes.png",
-    afterImg: "/images/depois.png",
+    beforeImg: antes,
+    afterImg: depois,
   },
   {
     name: "Beatriz Cavalcanti",
@@ -26,8 +28,8 @@ export const defaultSocialProofCases = [
       { label: "Sono e Disposição", val: "100% Recuperados" }
     ],
     quote: "Estava em pânico com a menopausa, acumulando gordura na barriga e sem energia. O treino de força mudou tudo. Hoje pego peso, me sinto mais forte e segura do que aos 30 anos!",
-    beforeImg: "/images/antes.png",
-    afterImg: "/images/depois.png",
+    beforeImg: antes,
+    afterImg: depois,
   },
   {
     name: "Juliana Mendes",
@@ -41,7 +43,7 @@ export const defaultSocialProofCases = [
       { label: "Energia Diária", val: "Dobrada" }
     ],
     quote: "Minha vida era o efeito sanfona. Na TPM, eu comia uma caixa de bombom inteira com culpa. A nutricionista me ensinou a modular o doce e o personal adaptou meus treinos. Emagreci sem sofrimento.",
-    beforeImg: "/images/antes.png",
-    afterImg: "/images/depois.png",
+    beforeImg: antes,
+    afterImg: depois,
   }
 ];

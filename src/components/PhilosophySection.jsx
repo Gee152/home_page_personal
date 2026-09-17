@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowUpRight, CheckCircle2 } from 'lucide-react';
 import PhilosophyVideoSection from './PhilosophyVideoSection';
 import SessaoCard from './SessaoCard';
+import { painPointHormonal } from '../assets/images';
 
 /**
  * ============================================================================
@@ -46,7 +47,7 @@ export default function PhilosophySection() {
           <div className="lg:col-span-6 order-2 lg:order-1">
             <SessaoCard
               type="image"
-              imageSrc="/images/pain_point_hormonal.jpg"
+              imageSrc={painPointHormonal}
               imageAlt="Treinamento individualizado e biomecânica com Personal Trainer em Recife"
               bannerTitle="Atendimento Individualizado"
               bannerSubtitle="Estúdios climatizados em Boa Viagem & Casa Forte"

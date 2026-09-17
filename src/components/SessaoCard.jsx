@@ -30,9 +30,11 @@ import { Play, Sparkles, X, Volume2 } from 'lucide-react';
  * - className (string): Classes CSS adicionais para o container.
  * ============================================================================
  */
+import { coachVideoThumb } from '../assets/images';
+
 export default function SessaoCard({
   type = 'video',
-  imageSrc = '/images/coach_video_thumb.jpg',
+  imageSrc = coachVideoThumb,
   imageAlt = 'Apresentação visual da sessão',
   videoUrl = 'https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1&enablejsapi=1',
   badgeText = 'Assistir: Como funciona o método integrado (2 min)',

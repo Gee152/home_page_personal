@@ -15,6 +15,7 @@ import {
   Globe,
   ArrowRight
 } from 'lucide-react';
+import { telaPulsanteAntesCroll } from '../assets/images';
 
 export function isBioLinksRoute() {
   if (typeof window === 'undefined') return false;
@@ -194,7 +195,7 @@ export default function BioLinks({ onNavigateHome }) {
             <div className="w-28 h-28 rounded-full p-1 bg-gradient-to-tr from-[#FF5A00] via-[#FFA040] to-[#FF7A00] shadow-lg shadow-[#FF5A00]/20 animate-pulse-neon">
               <div className="w-full h-full rounded-full overflow-hidden bg-[#090D14] border-2 border-[#090D14]">
                 <img 
-                  src="/images/telaPulsanteAntesCroll.jpg" 
+                  src={telaPulsanteAntesCroll} 
                   alt="Coach @emagreserpi - Emagrecimento Feminino Recife" 
                   className="w-full h-full object-cover object-top scale-110"
                 />

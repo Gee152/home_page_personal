@@ -1,6 +1,12 @@
 import React, { useState, useRef } from 'react';
 import PainPointCard from './PainPointCard';
 import { Brain, Moon, HeartCrack, Flame } from 'lucide-react';
+import {
+  painPointCompulsion,
+  painPointHormonal,
+  painPointCore,
+  painPointMenopause
+} from '../assets/images';
 
 const defaultPainPoints = [
   {
@@ -8,28 +14,28 @@ const defaultPainPoints = [
     title: "O Ciclo da Fome Emocional & Culpa",
     description: "Cortar carboidratos radicalmente eleva o cortisol e gera compulsão rebote. O emagrecimento só se torna definitivo quando sua mente e sua neuroquímica são nutridas, e não punidas.",
     tag: "Neurociência Comportamental",
-    bgImg: "/images/pain_point_compulsion.jpg"
+    bgImg: painPointCompulsion
   },
   {
     icon: Moon,
     title: "A Vontade Incontrolável de Doce na TPM",
     description: "Na fase lútea, os níveis de serotonina despencam e a temperatura basal sobe. Seu corpo pede energia rápida. Em vez de proibir, ensinamos estratégias inteligentes para saciar a dopamina sem sair da dieta.",
     tag: "Modulação Hormonal",
-    bgImg: "/images/pain_point_hormonal.jpg"
+    bgImg: painPointHormonal
   },
   {
     icon: HeartCrack,
     title: "A Frustração com a Diástase Pós-Parto",
     description: "Fazer abdominais tradicionais após a gravidez pode piorar a abertura da musculatura abdominal. Nosso protocolo de fortalecimento profundo do core restaura a firmeza e a postura com segurança.",
     tag: "Recuperação Pós-Parto",
-    bgImg: "/images/pain_point_core.jpg"
+    bgImg: painPointCore
   },
   {
     icon: Flame,
     title: "Metabolismo 'Travado' na Menopausa",
     description: "Com a queda do estrogênio, o corpo tende a perder massa muscular e acumular gordura visceral. O treino de força direcionado com nutrição anti-inflamatória é o único remédio comprovado pela ciência.",
     tag: "Climatério & Menopausa 40+",
-    bgImg: "/images/pain_point_menopause.jpg"
+    bgImg: painPointMenopause
   }
 ];
 

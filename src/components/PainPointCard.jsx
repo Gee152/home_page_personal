@@ -1,11 +1,17 @@
 import React from 'react';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import {
+  painPointCompulsion,
+  painPointHormonal,
+  painPointCore,
+  painPointMenopause
+} from '../assets/images';
 
 const defaultImages = [
-  '/images/pain_point_compulsion.jpg',
-  '/images/pain_point_hormonal.jpg',
-  '/images/pain_point_core.jpg',
-  '/images/pain_point_menopause.jpg'
+  painPointCompulsion,
+  painPointHormonal,
+  painPointCore,
+  painPointMenopause
 ];
 
 /**

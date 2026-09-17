@@ -10,11 +10,13 @@
  * - whatsappPhone, whatsappText: dados de contato
  */
 
+import { telaPulsanteAntesCroll, introWebBackground, introWebBackground2 } from '../assets/images';
+
 export const customIntroSlides = [
   {
     id: 1,
-    image: "/images/telaPulsanteAntesCroll.jpg", // Imagem vertical para mobile centrada
-    desktopImage: "/images/introWebBackground.jpg", // Imagem widescreen panorâmica para desktop
+    image: telaPulsanteAntesCroll, // Imagem vertical para mobile centrada
+    desktopImage: introWebBackground, // Imagem widescreen panorâmica para desktop
     tagTitle: "SAÚDE",
     tagSubtitle: "FITNESS",
     tagSubtitleBg: "bg-[#FF5A00]",
@@ -34,8 +36,8 @@ export const customIntroSlides = [
   },
   {
     id: 2,
-    image: "/images/telaPulsanteAntesCroll.jpg",
-    desktopImage: "/images/introWebBackground2.jpg", // Estúdio widescreen de treino
+    image: telaPulsanteAntesCroll,
+    desktopImage: introWebBackground2, // Estúdio widescreen de treino
     tagTitle: "RESULTADOS",
     tagSubtitle: "BOORAAA",
     tagSubtitleBg: "bg-[#FF7A00] text-white",

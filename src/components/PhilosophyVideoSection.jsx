@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowUpRight, Sparkles, X, Play, CheckCircle2, MessageCircle } from 'lucide-react';
 import SessaoCard from './SessaoCard';
+import { coachVideoThumb } from '../assets/images';
 
 /**
  * ============================================================================
@@ -85,7 +86,7 @@ export default function PhilosophyVideoSection({
 
           <SessaoCard
             type="video"
-            imageSrc="/images/coach_video_thumb.jpg"
+            imageSrc={coachVideoThumb}
             imageAlt="Apresentação da Filosofia e Método pelo Coach de Treino Feminino"
             videoUrl={videoUrl}
             badgeText="Assistir: Como funciona o método integrado (2 min)"

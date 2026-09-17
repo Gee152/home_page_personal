@@ -1,5 +1,11 @@
 import React, { useState, useRef } from 'react';
 import { ArrowUpRight, Clock, Users, Flame, Dumbbell, Baby, Activity, HeartHandshake } from 'lucide-react';
+import {
+  heroCardClasses,
+  painPointCore,
+  painPointMenopause,
+  painPointCompulsion
+} from '../assets/images';
 
 export default function ClassesGrid() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -37,7 +43,7 @@ export default function ClassesGrid() {
       icon: Dumbbell,
       badge: "Mais Procurado",
       badgeColor: "bg-[#FF5A00] text-white",
-      img: "/images/hero_card_classes.jpg"
+      img: heroCardClasses
     },
     {
       id: "pos-parto",
@@ -49,7 +55,7 @@ export default function ClassesGrid() {
       icon: Baby,
       badge: "Pós-Maternidade",
       badgeColor: "bg-[#FF7A00] text-white",
-      img: "/images/pain_point_core.jpg"
+      img: painPointCore
     },
     {
       id: "menopausa-40",
@@ -61,7 +67,7 @@ export default function ClassesGrid() {
       icon: Activity,
       badge: "Saúde 40+",
       badgeColor: "bg-[#FFA040] text-[#090D14]",
-      img: "/images/pain_point_menopause.jpg"
+      img: painPointMenopause
     },
     {
       id: "fome-emocional",
@@ -73,7 +79,7 @@ export default function ClassesGrid() {
       icon: HeartHandshake,
       badge: "Anti-Compulsão",
       badgeColor: "bg-[#FFB703] text-[#090D14]",
-      img: "/images/pain_point_compulsion.jpg"
+      img: painPointCompulsion
     }
   ];
 

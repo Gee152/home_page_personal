@@ -1,18 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import HeroQuickCards from './HeroQuickCards';
+import {
+  silhueta,
+  heroCardTimetable,
+  heroCardClasses,
+  heroCardJoinus,
+  introWebBackground
+} from '../assets/images';
 
 export default function Hero({ onOpenBioLinks }) {
   const whatsappUrl = "https://api.whatsapp.com/send?phone=5581989998899&text=" + encodeURIComponent("Olá! Gostaria de agendar uma avaliação inicial na consultoria em Recife.");
 
   // Processamento dinâmico em canvas: usa silhueta.webp, remove fundo branco preservando a camiseta e gera o efeito duotone laranja
-  const [silhouetteSrc, setSilhouetteSrc] = useState('/images/silhueta.webp');
-  const [orangeSilhouetteSrc, setOrangeSilhouetteSrc] = useState('/images/silhueta.webp');
+  const [silhouetteSrc, setSilhouetteSrc] = useState(silhueta);
+  const [orangeSilhouetteSrc, setOrangeSilhouetteSrc] = useState(silhueta);
 
   useEffect(() => {
     const img = new Image();
     img.crossOrigin = 'anonymous';
-    img.src = '/images/silhueta.webp';
+    img.src = silhueta;
     img.onload = () => {
       try {
         const w = img.naturalWidth;
@@ -143,7 +150,7 @@ export default function Hero({ onOpenBioLinks }) {
       label: "Horários",
       subtitle: "Boa Viagem & Casa Forte",
       href: "#unidades",
-      img: "/images/hero_card_timetable.jpg",
+      img: heroCardTimetable,
       tag: "Recife - PE"
     },
     {
@@ -152,7 +159,7 @@ export default function Hero({ onOpenBioLinks }) {
       label: "Modalidades",
       subtitle: "Força, Pós-Parto & Menopausa",
       href: "#modalidades",
-      img: "/images/hero_card_classes.jpg",
+      img: heroCardClasses,
       tag: "Feminino"
     },
     {
@@ -162,7 +169,7 @@ export default function Hero({ onOpenBioLinks }) {
       subtitle: "Consultoria Integrada Exclusiva",
       href: whatsappUrl,
       isExternal: true,
-      img: "/images/hero_card_joinus.jpg",
+      img: heroCardJoinus,
       tag: "Vagas Abertas"
     }
   ];
@@ -173,7 +180,7 @@ export default function Hero({ onOpenBioLinks }) {
       {/* Background Image com Overlay Escuro Esportivo (Alta Resolução do modeloSite.png) */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/introWebBackground.jpg"
+          src={introWebBackground}
           alt="Treino feminino de alta performance e consultoria em Recife"
           className="w-full h-full object-cover object-center opacity-35 filter contrast-125 brightness-90"
         />

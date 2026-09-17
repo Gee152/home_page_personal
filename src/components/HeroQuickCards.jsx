@@ -1,5 +1,10 @@
 import React, { useState, useRef } from 'react';
 import { ArrowUpRight } from 'lucide-react';
+import {
+  heroCardTimetable,
+  heroCardClasses,
+  heroCardJoinus
+} from '../assets/images';
 
 const defaultHeroQuickCards = [
   {
@@ -8,7 +13,7 @@ const defaultHeroQuickCards = [
     label: "Horários",
     subtitle: "Boa Viagem & Casa Forte",
     href: "#unidades",
-    img: "/images/hero_card_timetable.jpg",
+    img: heroCardTimetable,
     tag: "Recife - PE"
   },
   {
@@ -17,7 +22,7 @@ const defaultHeroQuickCards = [
     label: "Modalidades",
     subtitle: "Força, Pós-Parto & Menopausa",
     href: "#modalidades",
-    img: "/images/hero_card_classes.jpg",
+    img: heroCardClasses,
     tag: "Feminino"
   },
   {
@@ -27,7 +32,7 @@ const defaultHeroQuickCards = [
     subtitle: "Consultoria Integrada Exclusiva",
     href: "https://api.whatsapp.com/send?phone=5581989998899&text=" + encodeURIComponent("Olá! Gostaria de agendar uma avaliação inicial na consultoria em Recife."),
     isExternal: true,
-    img: "/images/hero_card_joinus.jpg",
+    img: heroCardJoinus,
     tag: "Vagas Abertas"
   }
 ];

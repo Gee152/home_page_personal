@@ -1,5 +1,6 @@
 import React from 'react';
 import { Dumbbell, Salad, Smartphone, Award, CheckCircle2, ArrowRight } from 'lucide-react';
+import { heroCardTimetable, telaPulsanteAntesCroll } from '../assets/images';
 
 export default function IntegratedMethod() {
   const whatsappUrl = "https://api.whatsapp.com/send?phone=5581989998899&text=" + encodeURIComponent("Olá! Gostaria de saber como funciona o plano integrado de nutricionista + personal trainer.");
@@ -72,7 +73,7 @@ export default function IntegratedMethod() {
           <div className="lg:col-span-6 order-1 lg:order-2">
             <div className="relative rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl group">
               <img
-                src="/images/hero_card_timetable.jpg"
+                src={heroCardTimetable}
                 alt="Treino de força feminino e filosofia do método"
                 className="w-full h-64 sm:h-80 lg:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-700"
               />
@@ -90,7 +91,7 @@ export default function IntegratedMethod() {
           <div className="lg:col-span-6">
             <div className="relative rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl group">
               <img
-                src="/images/telaPulsanteAntesCroll.jpg"
+                src={telaPulsanteAntesCroll}
                 alt="Nutrição clínica e consultoria feminina"
                 className="w-full h-64 sm:h-80 lg:h-96 object-cover object-center group-hover:scale-105 transition-transform duration-700"
               />
