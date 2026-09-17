@@ -57,23 +57,46 @@ export const images = {
 };
 
 export const imageMap = {
-  '/images/antes.png': antes,
-  '/images/depois.png': depois,
-  '/images/coach_video_thumb.jpg': coachVideoThumb,
-  '/images/hero_card_classes.jpg': heroCardClasses,
-  '/images/hero_card_joinus.jpg': heroCardJoinus,
-  '/images/hero_card_timetable.jpg': heroCardTimetable,
-  '/images/introWebBackground.jpg': introWebBackground,
-  '/images/introWebBackground2.jpg': introWebBackground2,
-  '/images/letice_hero.png': leticeHero,
-  '/images/pain_point_compulsion.jpg': painPointCompulsion,
-  '/images/pain_point_core.jpg': painPointCore,
-  '/images/pain_point_hormonal.jpg': painPointHormonal,
-  '/images/pain_point_menopause.jpg': painPointMenopause,
-  '/images/prod2.jpg': prod2,
-  '/images/produto1.png': produto1,
-  '/images/silhueta.webp': silhueta,
-  '/images/telaPulsanteAntesCroll.jpg': telaPulsanteAntesCroll,
+  '/src/assets/antes.png': antes,
+  '/src/assets/depois.png': depois,
+  '/src/assets/coach_video_thumb.jpg': coachVideoThumb,
+  '/src/assets/hero_card_classes.jpg': heroCardClasses,
+  '/src/assets/hero_card_joinus.jpg': heroCardJoinus,
+  '/src/assets/hero_card_timetable.jpg': heroCardTimetable,
+  '/src/assets/introWebBackground.jpg': introWebBackground,
+  '/src/assets/introWebBackground2.jpg': introWebBackground2,
+  '/src/assets/letice_hero.png': leticeHero,
+  '/src/assets/pain_point_compulsion.jpg': painPointCompulsion,
+  '/src/assets/pain_point_core.jpg': painPointCore,
+  '/src/assets/pain_point_hormonal.jpg': painPointHormonal,
+  '/src/assets/pain_point_menopause.jpg': painPointMenopause,
+  '/src/assets/prod2.jpg': prod2,
+  '/src/assets/produto1.png': produto1,
+  '/src/assets/silhueta.webp': silhueta,
+  '/src/assets/telaPulsanteAntesCroll.jpg': telaPulsanteAntesCroll,
+
+  // Aliases sem a barra inicial
+  'src/assets/antes.png': antes,
+  'src/assets/depois.png': depois,
+  'src/assets/coach_video_thumb.jpg': coachVideoThumb,
+  'src/assets/hero_card_classes.jpg': heroCardClasses,
+  'src/assets/hero_card_joinus.jpg': heroCardJoinus,
+  'src/assets/hero_card_timetable.jpg': heroCardTimetable,
+  'src/assets/introWebBackground.jpg': introWebBackground,
+  'src/assets/introWebBackground2.jpg': introWebBackground2,
+  'src/assets/letice_hero.png': leticeHero,
+  'src/assets/pain_point_compulsion.jpg': painPointCompulsion,
+  'src/assets/pain_point_core.jpg': painPointCore,
+  'src/assets/pain_point_hormonal.jpg': painPointHormonal,
+  'src/assets/pain_point_menopause.jpg': painPointMenopause,
+  'src/assets/prod2.jpg': prod2,
+  'src/assets/produto1.png': produto1,
+  'src/assets/silhueta.webp': silhueta,
+  'src/assets/telaPulsanteAntesCroll.jpg': telaPulsanteAntesCroll,
 };
+
+export function getImage(path) {
+  return imageMap[path] || path;
+}
 
 export default images;
