@@ -7,5 +7,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/home_page_personal/'
+  base: '/emagrecimento-feminino-recife/'
 });
