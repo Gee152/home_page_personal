@@ -1,0 +1,253 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #FDFBF7;
+  --color-navy: #141A24;
+  --color-navy-dark: #090D14;
+  --color-navy-light: #182232;
+  --color-lavender: #FFF3EB;
+  --color-lavender-muted: #F8ECE3;
+  --color-lavender-dark: #FFD2B3;
+  
+  --color-orange: #FF5A00;
+  --color-orange-light: #FF7A00;
+  --color-orange-dark: #E64A00;
+  --color-amber: #FFB703;
+
+  --color-mint: #FF5A00;
+  --color-mint-light: #FF7A00;
+  --color-mint-dark: #E64A00;
+  --color-neon-pink: #FF6B00;
+  --color-neon-rose: #FF3D00;
+
+  --font-display: 'Outfit', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #FFFFFF;
+    background-color: var(--color-navy-dark);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: #FFFFFF;
+  }
+}
+
+/* Animações de Alto Impacto */
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(14px) rotate(-4deg);
+  }
+}
+
+@keyframes pulseRadar {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 90, 0, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 18px rgba(255, 90, 0, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 90, 0, 0);
+  }
+}
+
+@keyframes pulseNeon {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 90, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 122, 0, 0.9);
+  }
+}
+
+@keyframes tickerAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 16s linear infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatReverse 7s ease-in-out infinite;
+}
+
+.animate-pulse-radar {
+  animation: pulseRadar 2.2s infinite;
+}
+
+.animate-pulse-neon {
+  animation: pulseNeon 2.5s infinite ease-in-out;
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: tickerAnimation 30s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* Watermark Outline Text (Inspirado no modeloSite.png) */
+.text-stroke-outline {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.12);
+  color: transparent;
+  user-select: none;
+}
+
+.text-stroke-outline-dark {
+  -webkit-text-stroke: 1.5px rgba(26, 42, 58, 0.12);
+  color: transparent;
+  user-select: none;
+}
+
+/* Contorno nas Letras Esportivo (Borda Laranja Leve em Texto Branco) */
+.text-stroke-orange {
+  -webkit-text-stroke: 1.2px #FF5A00;
+  paint-order: stroke fill;
+}
+
+@media (min-width: 640px) {
+  .text-stroke-orange {
+    -webkit-text-stroke: 2px #FF5A00;
+  }
+}
+
+/* Borda Branca Leve em Texto Laranja (Inversão de Cores para Leitura Perfeita) */
+.text-stroke-white {
+  -webkit-text-stroke: 1.2px #ffffff;
+  paint-order: stroke fill;
+}
+
+@media (min-width: 640px) {
+  .text-stroke-white {
+    -webkit-text-stroke: 2px #ffffff;
+  }
+}
+
+/* Borda Preta Leve em Texto para Alto Contraste */
+.text-stroke-black {
+  -webkit-text-stroke: 1.2px #000000;
+  paint-order: stroke fill;
+}
+
+@media (min-width: 640px) {
+  .text-stroke-black {
+    -webkit-text-stroke: 2px #000000;
+  }
+}
+
+.text-stroke-orange-sm {
+  -webkit-text-stroke: 0.8px #FF5A00;
+  paint-order: stroke fill;
+}
+
+@media (min-width: 640px) {
+  .text-stroke-orange-sm {
+    -webkit-text-stroke: 1.2px #FF5A00;
+  }
+}
+
+.text-stroke-orange-lg {
+  -webkit-text-stroke: 2px #FF5A00;
+  paint-order: stroke fill;
+}
+
+@media (min-width: 640px) {
+  .text-stroke-orange-lg {
+    -webkit-text-stroke: 3px #FF5A00;
+  }
+}
+
+/* Glassmorphism Refinado */
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.glass-card-dark {
+  background: rgba(17, 24, 35, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Card com Overlay Duotone (Inspirado nos 3 cards do modeloSite.png) */
+.hero-card-overlay {
+  background: linear-gradient(180deg, rgba(30, 27, 75, 0.4) 0%, rgba(15, 23, 42, 0.85) 100%);
+}
+
+/* Card Paralelepípedo Inclinado Esportivo (Inspirado no modeloSite.png) */
+.card-skewed-parallelogram {
+  transform: skewX(-7deg);
+}
+
+.card-skewed-content {
+  transform: skewX(7deg);
+}
+
+@media (max-width: 640px) {
+  .card-skewed-parallelogram {
+    transform: none;
+  }
+  .card-skewed-content {
+    transform: none;
+  }
+}
+
+/* Scrollbar oculto para carrossel e swipes horizontais */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Suavidade no toque mobile */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
